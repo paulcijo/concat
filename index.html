@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+<script src="./components/platform/platform.js"></script>
+<link rel="import" href="./components/font-roboto/roboto.html">
+<link rel = "import" href = "./components/core-header-panel.html">
+<link rel="import" href = "./components/paper-button/paper-button.html">
+
+<style type="text/css">
+	html, body {
+		height: 100%;
+		margin: 0;
+		background-color: #E5E5E5;
+    	font-family: 'RobotoDraft',sans-serif;
+    	background: none repeat scroll 0% 0% rgb(237, 239, 241);
+	}
+
+	core-header-panel {
+		background-color: rgb(62, 80, 180) !important;
+			color: white;
+		background-color: #4F7DC9;
+		float: left;
+	    width: 100%;
+	    height: auto;
+	    margin: 0px;
+	}
+
+	.core-header {
+		margin: 40px 60px 40px 50px;
+		word-wrap: break-word;
+		text-align: justify;
+	}
+
+	.option {
+		width: 50%;
+		height: 60px;
+		padding: 20px;
+		border: 1px solid lightgrey;
+		background: white;
+	}
+
+	.option-container {
+		width:50%;
+		margin: 100px;
+	}
+
+	.option #ripple {
+		color: cornflowerblue;
+	}
+
+	@media(max-width: 320px) {
+		.core-header {
+			margin: 30px;
+			font-size: 16px;
+		}
+		.option-container {
+			width:100%;
+			margin: 0;
+		}
+	}
+
+	
+</style>
+</head>
+<body fullbleed layout vertical>
+	<core-header-panel mode="waterfall-tall">
+    	<div class="core-header" vertical layout center-justified>
+    		The quick brown fox jumps over the lazy white dog. The quick brown fox jumpsover the lazy white dog.
+    	The quick brown fox jumps over the lazy white dog. The quick brown fox jumpsover the lazy white dog</div>
+    	<div class="content"></div>
+  	</core-header-panel>
+
+  	<div class = "option-container" layout vertical>
+  		<div class = "op1" layout horizontal>
+  			<paper-button class = "option" label="flat button"></paper-button>
+  			<paper-button class = "option" label="flat button"></paper-button>
+  		</div>
+  		<div layout horizontal>
+  			<paper-button label="flat button" class = "option"></paper-button>
+  			<paper-button label="flat button" class = "option"></paper-button>
+  		</div>
+  	</div>
+</body>
+</html>
